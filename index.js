@@ -6,7 +6,7 @@ import 'dotenv/config'
 const app = express();
 
 // Conectar a la base de datos
-const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL, ssl: true })
+const pool = new pg.Pool({ connectionString: process.env.DATABASE_URL })
 
 // Definir un puerto para nuestro servidor
 const port = 3000 || process.env.PORT;
