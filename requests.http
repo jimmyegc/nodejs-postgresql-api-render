@@ -1,0 +1,13 @@
+
+### 
+POST http://localhost:3000/report-error
+Content-Type: application/json
+
+{
+  "error": {
+    "name": "Error name",
+    "message": "Error message",
+    "stack": "Error stack"
+  },  
+  "additionalInfo": "Additional info"
+}
